@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>ShowLoading遮罩组件</title>
+		<link href="css/showLoading.css" rel="stylesheet"/>
+		<script src="js/jquery.showLoading.js"></script>
+	</head>
+
+	<body>
+		<div class="loading-indicator">
+			<img class="add_test_img" src=""/>
+		</div>
+	</body>
+	<script>
+		 //显示遮罩
+		$(".add_test_img").showLoading();
+		 //ajax调用
+		$.ajax({
+			type: "GET",
+			url: "Api.php",
+			data: {
+				ApiTarget: 'TestImage',
+				op: 'paginateByClassId',
+				prj_id: prj_id,
+				class_id: class_id,
+				page: index,
+				per_page: items_per_page,
+				user_id: user_id,
+				start_date: start_date_str,
+				end_date: end_date_str
+			},
+			success: function(response) {
+				//对返回数据进行处理，并显示
+				//......
+				//去除遮罩
+				$(".add_test_img").hideLoading();
+			},
+			error: function(xhr) {
+				//显示失败信息
+				//......
+				//去除遮罩
+				$(".add_test_img").hideLoading();
+			}
+		});
+	</script>
+
+</html>
