@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<meta name="Keywords" content="SuperSlide,横向全屏焦点图">
+		<meta name="Description" content="SuperSlide,横向全屏焦点图">
+		<title>横向全屏焦点图 - SuperSlide</title>
+		<script type="text/javascript" src="jquery1.42.min.js"></script>
+		<script type="text/javascript" src="jquery.SuperSlide.2.1.2.js"></script>
+	</head>
+
+	<body>
+
+		<style type="text/css">
+			/* css 重置 */
+			
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			body {
+				background: #fff;
+				font: normal 14px/1.8 宋体;
+			}
+			
+			img {
+				border: 0;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #333;
+			}
+			
+			a:hover {
+				color: #1974A1;
+			}
+			
+			
+		</style>
+
+		<!-- 示例开始 ======================= -->
+		<style type="text/css">
+			* {
+				zoom: 1
+			}
+			
+			.fullSlide {
+				position: relative;
+				background: #000;
+				margin: 0 auto;
+			}
+			
+			.fullSlide .bd {
+				position: relative;
+				z-index: 0;
+			}
+			
+			.fullSlide .bd li img {
+				width: 100%;
+				vertical-align: top;
+			}
+			
+			.fullSlide .hd {
+				position: relative;
+				z-index: 1;
+				margin-top: -30px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				background: #000;
+				filter: alpha(opacity=60);
+				opacity: 0.6
+			}
+			
+			.fullSlide .hd ul {
+				text-align: center;
+				padding-top: 5px;
+			}
+			
+			.fullSlide .hd ul li {
+				cursor: pointer;
+				display: inline-block;
+				*display: inline;
+				zoom: 1;
+				width: 8px;
+				height: 8px;
+				margin: 5px;
+				background: url(images/tg_flash_p.png) -18px 0;
+				overflow: hidden;
+				font-size: 0;
+			}
+			
+			.fullSlide .hd ul .on {
+				background-position: 0 0;
+			}
+			
+			.fullSlide .prev,
+			.fullSlide .next {
+				z-index: 1;
+				display: block;
+				width: 55px;
+				height: 55px;
+				position: relative;
+				margin: -27% 0 0 3%;
+				float: left;
+				background: url(images/arrow.png) 0 0 no-repeat;
+				filter: alpha(opacity=40);
+				opacity: 0.4
+			}
+			
+			.fullSlide .next {
+				background-position: right 0;
+				float: right;
+				margin-right: 3%
+			}
+			
+			.fullSlide .prev:hover,
+			.fullSlide .next:hover {
+				filter: alpha(opacity=80);
+				opacity: 0.8
+			}
+		</style>
+
+		<div class="fullSlide">
+			<div class="bd">
+				<ul>
+					<li>
+						<a target="_blank" href="http://www.superslide2.com"><img src="images/1.jpg" /></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.superslide2.com"><img src="images/2.jpg" /></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.superslide2.com"><img src="images/3.jpg" /></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.superslide2.com"><img src="images/4.jpg" /></a>
+					</li>
+					<li>
+						<a target="_blank" href="http://www.superslide2.com"><img src="images/5.jpg" /></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="hd">
+				<ul></ul>
+			</div>
+
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+		</div>
+
+		<script type="text/javascript">
+			jQuery(".fullSlide").slide({
+				titCell: ".hd ul",
+				mainCell: ".bd ul",
+				effect: "leftLoop",
+				vis: "auto",
+				autoPlay: true,
+				autoPage: true,
+				trigger: "click"
+			});
+		</script>
+
+	</body>
+
+</html>
