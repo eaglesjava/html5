@@ -1,0 +1,143 @@
+@charset "utf-8";
+.module-g {
+	background-color: #F7F7F7;
+}
+
+.module .m-title {
+	position: relative;
+	width: 100%;
+	height: 58px;
+	margin: 0 auto 20px;
+	border-bottom: 2px solid #DCDCDC;
+}
+
+.module .m-title h3 {
+	position: absolute;
+	width: 260px;
+	height: 58px;
+	line-height: 58px;
+	bottom: -2px;
+	left: 50%;
+	margin-left: -130px;
+	border-bottom: 2px solid #EA5404;
+	font-size: 20px;
+	color: #ef5100;
+	text-align: center;
+}
+
+/* news */
+
+.news .module .m-title {
+	margin-top: 20px;
+}
+
+.ourclient {
+	padding-bottom: 27px;
+}
+
+.ourclient .m-title {
+	width: 100%;
+}
+
+.ourclient .m-title h3 {
+	font-size: 20px;
+}
+
+.ourclient .oc-list dl {
+	display: inline;
+	float: left;
+	width: 310px;
+	margin: 0 10px;
+}
+
+.ourclient .oc-list dt {
+	position: relative;
+	margin-bottom: 2px;
+}
+
+.ourclient .oc-list dt span {
+	position: absolute;
+	width: 62px;
+	height: 62px;
+	left: 50%;
+	bottom: -27px;
+	margin-left: -31px;
+}
+
+.ourclient .oc-list h3 {
+	height: 50px;
+	line-height: 50px;
+	margin-top: 27px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.ourclient .oc-list p {
+	width: 290px;
+	height: 113px;
+	line-height: 28px;
+	font-size: 16px;
+	color: #646464;
+	text-indent: 2em;
+}
+
+.news-list ul {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.news-list li {
+	padding: 20px 0;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.news-list .nimg {
+	display: inline;
+	float: left;
+	width: 196px;
+	height: 136px;
+	border: 2px solid #E6E6E6;
+	background-color: #9ED8F6;
+}
+
+.news-list .nimg img {
+	width: 196px;
+	height: 136px;
+}
+
+.news-list .n-r {
+	display: inline;
+	float: right;
+	width: 673px;
+}
+
+.news-list .n-title {
+	height: 47px;
+	line-height: 47px;
+	margin-top: 8px;
+	overflow: hidden;
+}
+
+.news-list .n-title h3 {
+	float: left;
+	width: 590px;
+	height: 47px;
+	font-size: 18px;
+	overflow: hidden;
+}
+
+.news-list .n-title span {
+	float: right;
+	width: 65px;
+	height: 47px;
+	text-align: right;
+	font-size: 14px;
+	color: #646464;
+}
+
+.news-list .n-r p {
+	height: 74px;
+	line-height: 25px;
+	color: #646464;
+	overflow: hidden;
+}
