@@ -1,0 +1,96 @@
+body, ul, ul li, div {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+#container {
+    width: 640px;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+    /*border:1px solid black;*/
+}
+
+#top {
+    width: 640px;
+    padding: 10px 0px;
+    background-color: #fdfdfd;
+    border-bottom: 2px solid #cfcfcf;
+}
+
+.back-btn {
+    background: url(../images/arrow_left.png) center center no-repeat;
+    width: 98px;
+    height: 80px;
+    display: inline-block;
+    position: absolute;
+}
+
+#top h1 {
+    font-size: 34px;
+    text-align: center;
+    color: #333333;
+}
+
+#img {
+    width: 640px;
+    height: 374px;
+}
+
+.image-title {
+    position: absolute;
+    top: 430px;
+    color: #fff;
+    font-size: 24px;
+}
+
+#information {
+    width: 640px;
+}
+
+.info-item {
+    padding-left: 30px;
+    background-color: #fff;
+    /*	border-bottom: 2px solid #e5e6e5;*/
+}
+
+#activity-time {
+    background: url(../images/calendar.png) 10px center no-repeat;
+    height: 90px;
+    padding-left: 80px;
+    line-height: 90px;
+    font-size: 26px;
+    border-bottom: 2px solid #e5e6e5;
+    color: #454545;
+}
+
+#activity-address {
+    background: url(../images/dingwei.png) 10px center no-repeat;
+    height: 90px;
+    padding-left: 80px;
+    line-height: 90px;
+    font-size: 26px;
+    border-bottom: 2px solid #e5e6e5;
+    color: #454545;
+}
+
+#activity-sale {
+    background: url(../images/sale.png) 10px center no-repeat;
+    height: 90px;
+    padding-left: 80px;
+    line-height: 90px;
+    font-size: 26px;
+    border-bottom: 2px solid #e5e6e5;
+    color: #454545;
+}
+
+#description {
+    margin-left: 20px;
+}

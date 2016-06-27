@@ -1,0 +1,265 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    margin: 0 auto;
+    width: 640px;
+    font-family: "Microsoft YaHei";
+}
+
+#top {
+    width: 640px;
+    height: 160px;
+    background-color: #4b95e5;
+}
+
+#topic {
+    width: 640px;
+    height: 66px;
+    padding-top: 1px;
+}
+
+ul {
+    padding: 0px;
+}
+
+ul li {
+    padding: 0 xp;
+}
+
+#topic span {
+    background: url(../images/arrow_to_left.png) no-repeat;
+    width: 20px;
+    height: 38px;
+    margin-left: 30px;
+    display: block;
+    margin-top: 27px;
+    float: left;
+}
+
+#topic p {
+    color: #ffffff;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 27px;
+    margin-left: 133px;
+    float: left;
+}
+
+#search {
+    width: 640px;
+    height: 95px;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#area {
+    width: 80px;
+    height: 32px;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+#triangle {
+    width: 12px
+    height: 7px;
+    background: url(../images/triangle.png) no-repeat;
+    position: absolute;
+    top: 43px;
+    left: 88px;
+    display: block;
+}
+
+#my-search {
+    width: 452px;
+    height: 51px;
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    left: 115px;
+}
+
+#icon-girl {
+    width: 52px;
+    height: 47px;
+    background: url(../images/icon_girl.png) no-repeat;
+    position: absolute;
+    top: 14px;
+    left: 575px;
+}
+
+#icon-girl p {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+}
+
+/*=================*/
+#nav-main {
+    width: 640px;
+    height: 168px;
+    margin-left: 0px;
+}
+
+#nav-main ul {
+    width: 640px;
+    height: 188px;
+}
+
+#nav-main ul li {
+    float: left;
+    list-style: none;
+    width: 150px;
+    border-right: 2px solid #eaeaea;
+    font-size: 22px;
+}
+
+#content {
+    position: relative;
+    top: -30px;
+    left: 0px;
+    width: 640px;
+}
+
+#nav ul li {
+    float: left;
+    color: #4b95e5;
+    font-size: 24px;
+    list-style: none;
+    width: 33%;
+    text-align: center;
+    border-right: 2px solid #eaeaea;
+}
+
+#nav ul li span {
+    margin-right: 20px;
+
+}
+
+#nav {
+    width: 640px;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+
+ul li {
+    list-style: none;
+}
+
+#activity-list {
+    /*	position: relative;
+        top: 0px;
+        left: 0px;*/
+    width: 640px;
+    background-color: red;
+
+}
+
+.img {
+    width: 240px;
+    height: 162px;
+
+}
+
+.title {
+    width: 300px;
+    margin-left: 300px;
+
+}
+
+.time {
+    width: 300px;
+    margin-left: 300px;
+
+}
+
+#zaojiao {
+    background: url(../images/zaojiao.png) no-repeat;
+    height: 104px;
+    width: 90px;
+    margin: 0 auto;
+    text-align: center;
+    color: #78c432;
+}
+
+#park {
+    background: url(../images/park.png) no-repeat;
+    height: 104px;
+    width: 90px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fd792a;
+}
+
+#qinziyou {
+    background: url(../images/qinziyou.png) no-repeat;
+    height: 104px;
+    width: 90px;
+    margin: 0 auto;
+    text-align: center;
+    color: #4ca6f6;
+}
+
+#zhili {
+    background: url(../images/zhili.png) no-repeat;
+    height: 104px;
+    width: 90px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffb618;
+}
+
+#activity-list a {
+    display: block;
+}
+
+/*==================================================*/
+#select_time_list {
+    width: 640px;
+    position: absolute;
+    top: 40px;
+    z-index: 100;
+    background-color: #fff;
+    text-align: center;
+    font-size: 24px;
+    display: none;
+}
+
+#select_city_list {
+    width: 640px;
+    position: absolute;
+    top: 30px;
+    z-index: 100;
+    background-color: #fff;
+    text-align: center;
+    font-size: 24px;
+    display: none;
+}
+
+#select_sub_category_list {
+    width: 640px;
+    position: absolute;
+    top: 35px;
+    z-index: 100;
+    background-color: #fff;
+    text-align: center;
+    font-size: 24px;
+    display: none;
+}
+
+.list-item {
+    height: 60px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 60px;
+    color: #484848;
+    /*	display: none;*/
+}

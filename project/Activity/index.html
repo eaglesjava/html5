@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>亲子活动</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/screen_adapt.js"></script>
+</head>
+<body>
+<div id="container">
+    <div id="top">
+        <div id="topic">
+            <span></span>
+            <p>本地热门亲子活动</p>
+        </div>
+        <div id="search">
+            <div id="area">大连</div>
+            <span id="triangle"></span>
+            <input type="text" name="my-search" id="my-search"></input>
+            <div id="icon-girl"><p>我的</p></div>
+        </div>
+    </div>
+    <div id="nav-main">
+        <ul>
+            <li>
+                <div id="zaojiao">早教</div>
+            </li>
+            <li>
+                <div id="park">游乐场</div>
+            </li>
+            <li>
+                <div id="qinziyou">亲子游</div>
+            </li>
+            <li>
+                <div id="zhili">智力开发</div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="content">
+        <div id="nav">
+            <ul>
+                <li id="nav-time"><span>时间</span><img src="images/arrow_to_bottom.png"/></li>
+                <li id="nav-city"><span>全城</span><img src="images/arrow_to_bottom.png"/></li>
+                <li id="nav-class"><span>分类</span><img src="images/arrow_to_bottom.png"/></li>
+            </ul>
+        </div>
+        <div id="activity">
+            <ul id="activity-list">
+
+            </ul>
+        </div>
+        <div class="select">
+            <ul class="select-panel-list select-time-list" id="select_time_list">
+                <li class="list-item list-selected-item">全部</li>
+                <li class="list-item">本周</li>
+                <li class="list-item">周末</li>
+                <li class="list-item">一周以前</li>
+            </ul>
+            <ul class="select-panel-list select-city-list" id="select_city_list" data-selected-value="0">
+                <li class="list-item">全部</li>
+                <li class="list-item">西岗区</li>
+                <li class="list-item">中山区</li>
+                <li class="list-item">沙河口区</li>
+                <li class="list-item">甘井子区</li>
+                <li class="list-item">高新园区</li>
+                <li class="list-item">开发区</li>
+                <li class="list-item">旅顺口区</li>
+                <li class="list-item">瓦房店</li>
+                <li class="list-item">普兰店</li>
+                <li class="list-item">金州</li>
+                <li class="list-item">庄河</li>
+            </ul>
+            <ul class="select-panel-list select-category-list" id="select_sub_category_list" data-selected-value="0">
+                <li class="list-item list-selected-item" data-action="select-sub-category" data-value="0"
+                    data-text="分类">全部
+                </li>
+                <li class="list-item">早教</li>
+                <li class="list-item">游乐场</li>
+                <li class="list-item">亲子游</li>
+                <li class="list-item">智力开发</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+    function handle(response) {
+        var html = "";
+        var item = null;
+        for (var i = 0, l = response.length; i < l; i++) {
+            item = response[i];
+            html += "<a href=\"detail.html?id=" + item.id + "\" >";
+            html += "<li id =\"list" + i + "\"" + "\"data-id\"=" + item.id + ">";
+            html += "<img class=\"img\"" + "src=\"" + item.icon_url + "\" />";
+            html += "<div class=\"introduction\">";
+            html += "<p class = \"title\">" + item.title + "</p>";
+            html += "<div class = \"time\">" + item.date_range + "</div>";
+            html += "</li>";
+            html += "</a>"
+        }
+        console.log(html);
+        document.getElementById("activity-list").innerHTML = html;
+    }
+    function jsonp(url, callback) {
+        var script = document.createElement("script");
+        script.src = url;
+        var head = document.getElementsByTagName("head")[0];
+        head.appendChild(script);
+
+    }
+    jsonp('http://kidpca.cs0309.imtt.qq.com/abstract?populate=false&callback=handle');
+
+
+    /*下拉菜单，点击出现，再次点击消失*/
+    var timeBtn = document.getElementById("nav-time");
+    timeBtn.addEventListener("click", function () {
+        var timeSelector = document.getElementById("select_time_list");
+        if (timeSelector.style.display == "none") {
+            timeSelector.style.display = "block";
+            var contaner = document.getElementById("activity-list");
+            contaner.style.background = "red";
+        } else {
+            timeSelector.style.display = "none";
+        }
+
+    }, false);
+    var cityBtn = document.getElementById("nav-city");
+    cityBtn.addEventListener("click", function () {
+        var citySelector = document.getElementById("select_city_list");
+        if (citySelector.style.display == "none") {
+            citySelector.style.display = "block";
+            var contaner = document.getElementById("activity-list");
+            contaner.style.background = "rgba(72, 72, 72, 0.4)";
+
+        } else {
+            citySelector.style.display = "none";
+        }
+
+    }, false);
+    var classBtn = document.getElementById("nav-class");
+    classBtn.addEventListener("click", function () {
+        var classSelector = document.getElementById("select_sub_category_list");
+        if (classSelector.style.display == "none") {
+            classSelector.style.display = "block";
+            var contaner = document.getElementById("activity-list");
+            contaner.style.background = "rgba(72, 72, 72, 0.4)";
+
+        } else {
+            classSelector.style.display = "none";
+        }
+
+
+    }, false);
+
+
+</script>
+</html>
