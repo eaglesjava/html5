@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)http://mp.weixin.qq.com/s?__biz=MjM5MzA4ODc5MQ==&mid=200205227&idx=4&sn=b0c6151f451f137879a15e4575549a13#rd -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>一对一</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript">
+        document.domain = "qq.com";
+        var _wxao = window._wxao || {};
+        _wxao.begin = (+new Date());
+    </script>
+    <style>.vote_box {
+        position: relative;
+        background-color: #fff;
+        padding: 1em 0 0;
+        overflow: hidden
+    }
+
+    .vote_box:before, .vote_box:after {
+        content: " ";
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200%;
+        height: 1px;
+        border-top: 1px solid #e1e1df;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5)
+    }
+
+    .vote_box:after {
+        top: auto;
+        bottom: -1px
+    }
+
+    .vote_box.skin_help {
+        display: none;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        width: 15px
+    }
+
+    .vote_box.po_left {
+        left: -15px
+    }
+
+    .vote_box.po_right {
+        left: 100%
+    }
+
+    body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+        margin: 0;
+        padding: 0
+    }
+
+    pre {
+        word-break: break-all;
+        word-wrap: break-word
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    fieldset, img {
+        border: 0
+    }
+
+    address, caption, cite, code, dfn, th, var {
+        font-style: normal;
+        font-weight: normal
+    }
+
+    ol, ul {
+        list-style: none
+    }
+
+    caption, th {
+        text-align: left
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 100%;
+        font-weight: normal
+    }
+
+    q:before, q:after {
+        content: ''
+    }
+
+    abbr, acronym {
+        border: 0;
+        font-variant: normal
+    }
+
+    sup {
+        vertical-align: text-top
+    }
+
+    sub {
+        vertical-align: text-bottom
+    }
+
+    input, textarea, select {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit
+    }
+
+    input, textarea, select {
+        font-size: 100%
+    }
+
+    legend {
+        color: #000
+    }
+
+    body {
+        background: #f8f7f5;
+        color: #222;
+        font-family: Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Tohoma, Arial;
+        height: 100%;
+        padding: 15px 0 0;
+        position: relative
+    }
+
+    body > .tips {
+        display: none;
+        left: 50%;
+        padding: 20px;
+        position: fixed;
+        text-align: center;
+        top: 50%;
+        width: 200px;
+        z-index: 100
+    }
+
+    .page {
+        padding: 15px
+    }
+
+    .page .page-error, .page .page-loading {
+        line-height: 30px;
+        position: relative;
+        text-align: center
+    }
+
+    .btn {
+        background-color: #fcfcfc;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        color: #222;
+        cursor: pointer;
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 15px 0;
+        moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
+    }
+
+    .icons {
+        background: url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icons.png) no-repeat 0 0;
+        border-radius: 5px;
+        height: 25px;
+        overflow: hidden;
+        position: relative;
+        width: 25px
+    }
+
+    .icons.arrow-r {
+        background: url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/brand_profileinweb_arrow@2x.png) no-repeat center center;
+        background-size: 100%;
+        height: 16px;
+        width: 12px
+    }
+
+    .icons.check {
+        background-position: -25px 0
+    }
+
+    #activity-detail .page-bizinfo .header #activity-name {
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        white-space: pre-wrap;
+        word-wrap: normal;
+        word-break: normal
+    }
+
+    .page-bizinfo {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .activity-meta {
+        display: inline-block;
+        line-height: 16px;
+        vertical-align: middle;
+        margin-left: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: #8c8c8c;
+        font-size: 11px
+    }
+
+    .activity-meta.no-extra {
+        margin-left: 0
+    }
+
+    .activity-info .text-ellipsis {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 104px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+    }
+
+    #post-user {
+        text-decoration: none;
+        outline: 0;
+        color: #607fa6
+    }
+
+    a.activity-meta {
+        text-decoration: none;
+        outline: 0;
+        color: #607fa6
+    }
+
+    a.activity-meta:active {
+        color: #607fa6
+    }
+
+    a.activity-meta:active .icon_link_arrow {
+        background: transparent url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/link_arrow_right_blue.png) no-repeat 0 0;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%
+    }
+
+    .activity-info .icon_link_arrow {
+        margin-left: 3px;
+        margin-top: -5px
+    }
+
+    .icon_link_arrow {
+        display: none;
+        vertical-align: middle;
+        width: 7px;
+        height: 7px;
+        background: transparent url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/link_arrow_right_blue.png) no-repeat 0 0;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%
+    }
+
+    #activity-detail .page-content {
+        margin: 4px 0 0;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    #activity-detail .page-content .media {
+        margin: 18px 0
+    }
+
+    #activity-detail .page-content .media img {
+        width: 100%
+    }
+
+    #activity-detail .page-content .text {
+        color: #3e3e3e;
+        line-height: 1.5;
+        width: 100%
+    }
+
+    #activity-detail .page-content .text p {
+        *zoom: 1;
+        min-height: 1.5em;
+        min-height: 1.5em;
+        word-wrap: normal;
+        word-break: normal;
+        white-space: pre-wrap
+    }
+
+    #activity-detail .page-content .text p:after {
+        content: "\200B";
+        display: block;
+        height: 0;
+        clear: both
+    }
+
+    #activity-list .header {
+        font-size: 20px
+    }
+
+    #activity-list .page-list {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 18px 0;
+        overflow: hidden
+    }
+
+    #activity-list .page-list .line.btn {
+        border-radius: 0;
+        margin: 0;
+        text-align: left
+    }
+
+    #activity-list .page-list .line.btn .checkbox {
+        height: 25px;
+        line-height: 25px;
+        padding-left: 35px;
+        position: relative
+    }
+
+    #activity-list .page-list .line.btn .checkbox .icons {
+        background-color: #ccc;
+        left: 0;
+        position: absolute;
+        top: 0
+    }
+
+    #activity-list .page-list .line.btn.off .icons {
+        background-image: none
+    }
+
+    .vm {
+        vertical-align: middle
+    }
+
+    .tc {
+        text-align: center
+    }
+
+    .db {
+        display: block
+    }
+
+    .dib {
+        display: inline-block
+    }
+
+    .b {
+        font-weight: 700
+    }
+
+    .clr {
+        clear: both
+    }
+
+    .text img {
+        max-width: 100% !important;
+        height: auto !important
+    }
+
+    .page-toolbar {
+        padding: 18px 0;
+        overflow: hidden;
+        *zoom: 1;
+        height: 16px;
+        line-height: 16px
+    }
+
+    .page-toolbar a {
+        color: #607fa6;
+        font-size: 14px;
+        text-decoration: none;
+        text-shadow: 0 1px #fff;
+        -webkit-text-shadow: 0 1px #fff;
+        -moz-text-shadow: 0 1px #fff
+    }
+
+    .page-url {
+        float: left
+    }
+
+    .page-toolbar a.page-imform {
+        float: right;
+        color: #7b7b7b
+    }
+
+    .page-toolbar .pager {
+        display: block;
+        margin: 0 auto -16px;
+        text-align: center;
+        font-size: 14px
+    }
+
+    .page-toolbar .pager a {
+        margin: 0 10px
+    }
+
+    .page-toolarea {
+        font-size: 14px;
+        padding: 10px 0 20px
+    }
+
+    .page-toolarea a {
+        display: block;
+        line-height: 2em;
+        color: #7b7b7b;
+        text-decoration: none
+    }
+
+    .page-toolarea .icon_arrow_gray {
+        margin-left: 5px;
+        margin-top: -0.2em
+    }
+
+    .res_iframe {
+        width: 100%;
+        background-color: transparent;
+        border: 0
+    }
+
+    .line_title {
+        text-align: center;
+        margin-top: 20px;
+        border-top: 1px dotted #a8a8a7
+    }
+
+    .line_title .tips {
+        display: inline-block;
+        position: relative;
+        top: -9px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 14px;
+        color: #cfcfcf;
+        background-color: #f8f7f5;
+        text-decoration: none
+    }
+
+    .icon_arrow_gray {
+        display: inline-block;
+        vertical-align: middle;
+        width: 7px;
+        height: 7px;
+        background: transparent url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon_arrow_gray.png) no-repeat 0 0;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%
+    }
+
+    .selectTdClass {
+        background-color: #edf5fa !important
+    }
+
+    table.noBorderTable td, table.noBorderTable th, table.noBorderTable caption {
+        border: 1px dashed #ddd !important
+    }
+
+    table {
+        margin-bottom: 10px;
+        border-collapse: collapse;
+        display: table;
+        width: 100% !important
+    }
+
+    td, th {
+        word-wrap: break-word;
+        word-break: break-all;
+        padding: 5px 10px;
+        border: 1px solid #DDD
+    }
+
+    caption {
+        border: 1px dashed #DDD;
+        border-bottom: 0;
+        padding: 3px;
+        text-align: center
+    }
+
+    th {
+        border-top: 2px solid #BBB;
+        background: #f7f7f7
+    }
+
+    .ue-table-interlace-color-single {
+        background-color: #fcfcfc
+    }
+
+    .ue-table-interlace-color-double {
+        background-color: #f7faff
+    }
+
+    td p {
+        margin: 0;
+        padding: 0
+    }
+
+    .vote_area {
+        position: relative;
+        display: block;
+        display: block;
+        margin: 14px 0;
+        white-space: normal !important
+    }
+
+    .vote_iframe {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: 0
+    }</style>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css"
+          href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/pc-page1da716.css"/>    <![endif]-->
+    <link media="screen and (min-width:1000px)" rel="stylesheet" type="text/css" href="./一对一_files/pc-page1da716.css">
+    <style>        body {
+        -webkit-touch-callout: none;
+        -webkit-text-size-adjust: none;
+    }    </style>
+    <style>        #nickname {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+    ol, ul {
+        list-style-position: inside;
+    }
+
+    #activity-detail .page-content .text {
+        font-size: 16px;
+    }            </style>
+</head>
+<body id="activity-detail"><img width="12px" style="position: absolute;top:-1000px;"
+                                src="./一对一_files/ico_loading1984f1.gif">
+<div class="page-bizinfo">
+    <div class="header"><h1 id="activity-name">一对一</h1>
+        <p class="activity-info"><span id="post-date" class="activity-meta no-extra">2014-05-15</span> <span
+                class="activity-meta">睿花苑教育</span> <a href="javascript:viewProfile();" id="post-user"
+                                                      class="activity-meta"> <span class="text-ellipsis">SAP资料王</span><i
+                class="icon_link_arrow"></i> </a></p></div>
+</div>
+<div id="page-content" class="page-content">
+    <div id="img-content">
+        <div class="media" id="media"><img onerror="this.parentNode.removeChild(this)" src="./一对一_files/0"></div>
+        <div class="text"><p><span style="FONT-SIZE: 18px"><span style="COLOR: #ff0000">睿花苑教育特色一对一课程 </span><br>
+一对一其实是“一对一个性化辅导”的简写，是睿花苑教育专门针对每个孩子不同的学习情况和心理情况，有针对性地制定出一套独特的、行之有效的教学辅导方案和心理辅导策略，并由每个学生所配备的教学团队加以实施执行,通过全方位、策略性的辅导，不仅使学生掌握一种切合自身的学习方法，改善不良学习习惯，稳固提升学科知识，而且在树立自信、完善人格、塑造个性等方面均得以综合的提升。<br><span
+                    style="COLOR: #ff0000">
+睿花苑教育“一对一辅导，N对一服务”理念的核心价值：</span><br>一、创设良好的情境,激发学生的创新思维。<br>    
+富有情趣的情境恰是激发学生学习兴趣的最好手段,乐恩特课堂教学经常采用讲故事、猜谜语、做游戏、放动画、观察等形式把枯燥的教学变成实用性、愉快性的情境,从而引发学生的学习兴趣和探索行为,唤醒学生所学内容的直接经验,增强学生的学习积极性。<br>二、鼓励学生自主探索与合作交流,激发学生的学习兴趣。<br>  
+  鼓励学生自主探索,亲自实践独立思考与合作探究,让学生在观察学习的过程中把学习的兴趣激发起来。<br>三、尊重学生个体差异,实施分层分类教学<br>    
+在实际教学中,由于智力发展水平及个性的特征不同,认知同一事物的角度和深度必然存在明显差异,学生的个体差异与思维策略不同,以及认知水平和学习能力的差异,乐恩特的老师能够及时、全面了解并尊重学生的个体差异,建立平等、信任、理解和相互尊重的和谐师生关系,营造民主的教学环境, 
+让学生发现自己的见解,展示个性特征。<br><span style="COLOR: #ff0000">睿花苑教育一对一个性化辅导流程</span></span><br><br><span
+                style="FONT-SIZE: 18px"><img style="WIDTH: 603px; HEIGHT: 532px"
+                                             src="./一对一_files/1-14050215312Ia.png"><br><span style="COLOR: #ff0000">睿花苑教育一对一个性化辅导的适应学生群体<br>基础巩固型学生</span><br>1、相关特征：<br>这类学生是基础知识及相关解题方法和解题技巧都很薄弱的学生。<br>2、学习表现<br>大多数都是考试不及格，有些甚至只有三四十分或更少。<br>3、诱发原因<br>这类学生对基础知识点不了解或者根本没有掌握或者只对表面内容有所了解并不真正理解其内涵。<br>4、解决战略<br>对于这类学生首先要构建他们的知识体系，夯实每一个基础知识点，并能利用基础知识解决最基本的典型题目。<br>5、解决战术<br>采用一对一同步辅导，内容以基础巩固题为主，主要是帮助学生理解与掌握基础知识，并培养运用这些知识解题的能力。<br>6、教学态度<br>对于这类学生不能急于求成，要从一点一滴做起，循序渐进的逐步提高，这样不但能尽快建立他们的知识体系而且能够建立他们对学习的兴趣和信心。“兴趣是最好的老师”当我们引导孩子感受到学习的乐趣，帮助他们构建了坚实的知识基础以后，他们就能够掌握学习的方法与技巧，并领会学习的规律
+。这也是我们提倡“快乐学习”理念的出发点和归宿点。<br><span style="COLOR: #ff0000">稳固提升型学生</span><br>1、 
+相关特征：<br>这类学生是基础扎实且相关的基础题目也都能够掌握很好的。<br>2、 
+学习表现<br>这类学生的考试成绩也多数能达到及格或70多分但很难突破95分（120分的标准）或115以上（150分的标准）。<br>3、 
+诱发原因<br>这类学生往往都很踏实认真，但他们不注重创新和学习方法、解题技巧的归纳总结、局限于按部就班的完成老师所留的各项作业，思维难以突破考试中也很难得高分。<br>4、 
+解决战略<br>对于这类学生首先要教授他们良好的学习方法和技巧，教学过程中引导他们逐步掌握适合自身的学习方法，学会举一反三，进而达到思维的突破和高分的获得。<br>5、 
+解决战术<br>采用同步辅导，夯实基础知识，开展综合性题型训练，让学生能够灵活运用已经掌握的基础知识，增强分析问题解决问题的能力，并促使学生尽快养成注重细节的良好习惯。<br>6、 
+教学态度<br>对于这类学生，我们更注重的是教会他们如何分析问题，如何抓住关键点，并着手解决问题。<br><span style="COLOR: #ff0000">拔高冲刺型学生</span><br>1、相关特征：<br>这类学生是不注重基础知识落实导致考试成绩差强人意，最突出的是在考试中永远与满分无缘。<br>2、学习表现：<br>这类学生考试分数忽高忽低，但大多数时候分数不会太高，最突出表现在考试中无法完整解答最后的压轴题，或者计算不正确或者干脆没有任何思路。<br>3、 
+诱发原因<br>这类学生非常聪明但他们往往好高骛远，学习态度不够端正，学习习惯比较毛躁。<br>4、 
+解决战略<br>对于这类学生首先要做的是帮助他们端正学习态度，养成良好的学习习惯，并且言传身教，严格要求，让他们切身感受到重视细节的必要性和重要性，另外还要开阔他们的眼界，广泛接触新颖探究性题型，不断加强他们对综合性应用型题组解决能力，提升他们的逻辑思维品质。<br>5、 
+解决战术<br>采用一对一同步辅导，以巩固基础知识为主，进而开展综合解题能力的训练，促使学生尽快养成注重细节的良好习惯，以解答综合应用题组和探究创新题组为主，培养学生的创新意识，做到精益求精尽善尽美。<br>6、 
+教学态度<br>我们必须帮助他们牢牢掌握基础知识，真正做到“讲一、练一、会一”进而能够举一反三，使他们知道如何入手分析问题，怎样更灵活的解决问题，尽快实现由量变到质变的过程，从而使学习成绩稳步提升并实现最后突破。</span></p>
+        </div>
+        <p class="page-toolbar"><a href="javascript:report_article();" class="page-imform">举报</a></p></div>
+</div>
+<script type="text/javascript">
+    var tid = "";
+    var aid = "";
+    var uin = "";
+    var key = "";
+    var biz = "MjM5MzA4ODc5MQ==";
+    var mid = "200205227";
+    var idx = "4";
+    var nickname = "SAP资料王";
+    var user_name = "gh_3bb9b69b2d40";
+    var fakeid = "";
+    var version = "";
+    var is_limit_user = "0";
+
+    var msg_title = "一对一";
+    var msg_desc = "睿花苑教育特色一对一课程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>一对一其实是“一对一个性化辅导”的简写，是睿花苑教育专门针对每个孩子不同";
+    var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/LSAy57PsTicvUOYRFtjpFBM4ImfB1Hn3T2Q0cpEyajJnLoggEPrOE1n4xHZ2a5wA4rF1HXfkWPXo9CUlI3SctyA/0";
+    var msg_link = "http://mp.weixin.qq.com/s?__biz=MjM5MzA4ODc5MQ==&amp;mid=200205227&amp;idx=4&amp;sn=b0c6151f451f137879a15e4575549a13#rd";
+    var msg_source_url = '';
+    var networkType;
+</script>
+<script>function hash(e) {
+    var t = 5381;
+    for (var n = 0; n < e.length; n++) t = (t << 5) + t + e.charCodeAt(n), t &= 2147483647;
+    return t;
+}
+function trim(e) {
+    return e.replace(/^\s*|\s*$/g, "");
+}
+function ajax(e) {
+    var t = (e.type || "GET").toUpperCase(), n = e.url, r = typeof e.async == "undefined" ? !0 : e.async, i = typeof e.data == "string" ? e.data : null, s = new XMLHttpRequest, o = null;
+    s.open(t, n, r), s.onreadystatechange = function () {
+        s.readyState == 3 && e.received && e.received(s), s.readyState == 4 && (s.status >= 200 && s.status < 400 && (clearTimeout(o), e.success && e.success(s.responseText)), e.complete && e.complete(), e.complete = null);
+    }, t == "POST" && s.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8"), s.setRequestHeader("X-Requested-With", "XMLHttpRequest"), s.send(i), typeof e.timeout != "undefined" && (o = setTimeout(function () {
+        s.abort("timeout"), e.complete && e.complete(), e.complete = null;
+    }, e.timeout));
+}
+function report_article() {
+    var e = sourceurl == "" ? location.href : sourceurl, t = [nickname, location.href, title, e].join("|WXM|");
+    location.href = "/mp/readtemplate?t=wxm-appmsg-inform&__biz=" + biz + "&info=" + encodeURIComponent(t) + "#wechat_redirect";
+}
+function viewSource() {
+    var redirectUrl = sourceurl.indexOf("://") < 0 ? "http://" + sourceurl : sourceurl;
+    redirectUrl = "http://" + location.host + "/mp/redirect?url=" + encodeURIComponent(sourceurl);
+    var opt = {
+        url: "/mp/advertisement_report" + location.search + "&report_type=3&action_type=0&url=" + encodeURIComponent(sourceurl) + "&uin=" + uin + "&key=" + key + "&__biz=" + biz + "&r=" + Math.random(),
+        type: "GET",
+        async: !1
+    };
+    return tid ? opt.success = function (res) {
+        try {
+            res = eval("(" + res + ")");
+        } catch (e) {
+            res = {};
+        }
+        res && res.ret == 0 ? location.href = redirectUrl : viewSource();
+    } : (opt.timeout = 2e3, opt.complete = function () {
+        location.href = redirectUrl;
+    }), ajax(opt), !1;
+}
+function parseParams(e) {
+    if (!e) return {};
+    var t = e.split("&"), n = {}, r = "";
+    for (var i = 0, s = t.length; i < s; i++) r = t[i].split("="), n[r[0]] = r[1];
+    return n;
+}
+function htmlDecode(e) {
+    return e.replace(/&#39;/g, "'").replace(/<br\s*(\/)?\s*>/g, "\n").replace(/&nbsp;/g, " ").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
+}
+function report(e, t, n) {
+    var r = e.split("?").pop();
+    r = r.split("#").shift();
+    if (r == "") return;
+    var i = [r, "action_type=" + n, "uin=" + t].join("&");
+    ajax({url: "/mp/appmsg/show", type: "POST", timeout: 2e3, data: i});
+}
+function reportTimeOnPage() {
+    var e = location.href, t = e.split("?").pop();
+    t = t.split("#").shift();
+    if (t == "") return;
+    var n = [t, "start_time=" + _wxao.begin, "end_time=" + (new Date).getTime(), "uin=" + fakeid, "title=" + encodeURIComponent(title), "action=pagetime"].join("&");
+    ajax({url: "/mp/appmsg/show?" + n, async: !1, timeout: 2e3});
+}
+function share_scene(e, t) {
+    var n = "";
+    tid != "" && (n = "tid=" + tid + "&aid=" + 54);
+    var r = e.split("?")[1] || "";
+    r = r.split("#")[0];
+    if (r == "") return;
+    var i = [r, "scene=" + t];
+    return n != "" && i.push(n), r = i.join("&"), e.split("?")[0] + "?" + r + "#" + (e.split("#")[1] || "");
+}
+function get_url(e, t) {
+    t = t || "";
+    var n = e.split("?")[1] || "";
+    n = n.split("#")[0];
+    if (n == "") return;
+    var r = [n];
+    return t != "" && r.push(t), n = r.join("&"), e.split("?")[0] + "?" + n + "#" + (e.split("#")[1] || "");
+}
+function viewProfile() {
+    typeof WeixinJSBridge != "undefined" && WeixinJSBridge.invoke && WeixinJSBridge.invoke("profile", {
+        username: user_name,
+        scene: "57"
+    });
+}
+function gdt_click(e, t, n, r, i, s, o) {
+    if (has_click[i]) return;
+    has_click[i] = !0;
+    var u = document.getElementById("loading_" + i);
+    u && (u.style.display = "inline");
+    var a = +(new Date);
+    ajax({
+        url: "/mp/advertisement_report?report_type=2&type=" + e + "&url=" + encodeURIComponent(t) + "&tid=" + i + "&rl=" + encodeURIComponent(n) + "&uin=" + uin + "&key=" + key + "&__biz=" + biz + "&r=" + Math.random(),
+        type: "GET",
+        timeout: 1e3,
+        complete: function (n) {
+            has_click[i] = !1, u && (u.style.display = "none"), e == "5" ? location.href = "/mp/profile?source=from_ad&tousername=" + t + "&ticket=" + s + "&uin=" + uin + "&key=" + key + "&__biz=" + biz + "&mid=" + mid + "&idx=" + idx : location.href = get_url(t, "tid=" + i);
+        },
+        async: !0
+    });
+}
+function addEvent(e, t, n) {
+    window.addEventListener ? e.addEventListener(t, n, !1) : window.attachEvent ? e.attachEvent("on" + t, function (e) {
+        return function (t) {
+            n.call(e, t);
+        };
+    }(e)) : e["on" + t] = n;
+}
+function log(e) {
+    var t = document.getElementById("log");
+    if (t) {
+        var n = t.innerHTML;
+        t.innerHTML = n + "<div>" + e + "</div>";
+    }
+}
+function initpicReport() {
+    function e(e) {
+        var t = [];
+        for (var n in e) t.push(n + "=" + encodeURIComponent(e[n] || ""));
+        return t.join("&");
+    }
+
+    if (!networkType) return;
+    var t = window.performance || window.msPerformance || window.webkitPerformance, n = null;
+    if (!t || typeof t.getEntries == "undefined") return;
+    var r, i = 100, s = document.getElementsByTagName("img"), o = s.length, u = navigator.userAgent, a;
+    /micromessenger\/(\d+\.\d+)/i.test(u), a = RegExp.$1;
+    for (var f = 0, l = s.length; f < l; f++) {
+        r = parseInt(Math.random() * 100);
+        if (r > i) continue;
+        var c = s[f].getAttribute("src");
+        if (c.indexOf("mp.weixin.qq.com") >= 0) continue;
+        var h = t.getEntries(), p;
+        for (var d = 0; d < h.length; d++) {
+            p = h[d];
+            if (p.name == c) {
+                ajax({
+                    type: "POST",
+                    url: "/mp/appmsgpicreport?__biz=" + biz + "&uin=" + uin + "&key=" + key + "#wechat_redirect",
+                    data: e({
+                        rnd: Math.random(),
+                        uin: uin,
+                        version: version,
+                        client_version: a,
+                        device: navigator.userAgent,
+                        time_stamp: parseInt(+(new Date) / 1e3),
+                        url: c,
+                        img_size: s[f].fileSize || 0,
+                        user_agent: navigator.userAgent,
+                        net_type: networkType,
+                        sample: o > 100 ? 100 : o,
+                        delay_time: parseInt(p.duration)
+                    })
+                });
+                break;
+            }
+        }
+    }
+}
+var ISWP = !!navigator.userAgent.match(/Windows\sPhone/i), sw = 0;
+(function () {
+    function e(e) {
+        var t = 0;
+        e.contentDocument && e.contentDocument.body.offsetHeight ? t = e.contentDocument.body.offsetHeight : e.Document && e.Document.body && e.Document.body.scrollHeight ? t = e.Document.body.scrollHeight : e.document && e.document.body && e.document.body.scrollHeight && (t = e.document.body.scrollHeight);
+        var n = e.parentElement;
+        if (!!n) {
+            n.style.height = t + "px";
+            var r = n.childNodes;
+            for (var i = 0, s = r.length; i < s; ++i) r[i].style.height = t + "px";
+            t < 10 && (e.parentElement.style.overflow = "hidden");
+        }
+    }
+
+    var t = document.getElementsByTagName("iframe"), n;
+    for (var r = 0, i = t.length; r < i; ++r) {
+        n = t[r];
+        var s = n.getAttribute("data-src");
+        !!s && s.indexOf("http://mp.weixin.qq.com/mp/appmsgvote") == 0 && (n.setAttribute("src", s.replace("#wechat_redirect", ["&uin=", uin, "&key=", key].join(""))), function (t) {
+            t.onload = function () {
+                e(t);
+            };
+        }(n), n.appmsg_idx = r);
+    }
+    window.iframe_reload = function (r) {
+        for (var i = 0, s = t.length; i < s; ++i) {
+            n = t[i];
+            var o = n.getAttribute("src");
+            !!o && o.indexOf("http://mp.weixin.qq.com/mp/appmsgvote") == 0 && e(n);
+        }
+    };
+})();
+if (ISWP) {
+    var profile = document.getElementById("post-user");
+    profile && profile.setAttribute("href", "weixin://profile/" + user_name);
+}
+var cookie = {
+    get: function (e) {
+        if (e == "") return "";
+        var t = new RegExp(e + "=([^;]*)"), n = document.cookie.match(t);
+        return n && n[1] || "";
+    }, set: function (e, t) {
+        var n = new Date;
+        n.setDate(n.getDate() + 1);
+        var r = n.toGMTString();
+        return document.cookie = e + "=" + t + ";expires=" + r, !0;
+    }
+}, title = trim(htmlDecode(msg_title)), sourceurl = trim(htmlDecode(msg_source_url));
+msg_link = htmlDecode(msg_link), function () {
+    function e() {
+        var e = "", t = msg_cdn_url, n = msg_link, r = htmlDecode(msg_title), i = htmlDecode(msg_desc);
+        i = i || n, WeixinJSBridge.call("hideToolbar"), "1" == is_limit_user && WeixinJSBridge.call("hideOptionMenu"), WeixinJSBridge.on("menu:share:appmessage", function (s) {
+            var o = 1;
+            s.scene == "favorite" && (o = 4), WeixinJSBridge.invoke("sendAppMessage", {
+                appid: e,
+                img_url: t,
+                img_width: "640",
+                img_height: "640",
+                link: share_scene(n, o),
+                desc: i,
+                title: r
+            }, function (e) {
+                report(n, fakeid, o);
+            });
+        }), WeixinJSBridge.on("menu:share:timeline", function (e) {
+            report(n, fakeid, 2), WeixinJSBridge.invoke("shareTimeline", {
+                img_url: t,
+                img_width: "640",
+                img_height: "640",
+                link: share_scene(n, 2),
+                desc: i,
+                title: r
+            }, function (e) {
+            });
+        });
+        var s = "";
+        WeixinJSBridge.on("menu:share:weibo", function (e) {
+            WeixinJSBridge.invoke("shareWeibo", {content: r + share_scene(n, 3), url: share_scene(n, 3)}, function (e) {
+                report(n, fakeid, 3);
+            });
+        }), WeixinJSBridge.on("menu:share:facebook", function (e) {
+            report(n, fakeid, 4), WeixinJSBridge.invoke("shareFB", {
+                img_url: t,
+                img_width: "640",
+                img_height: "640",
+                link: share_scene(n, 4),
+                desc: i,
+                title: r
+            }, function (e) {
+            });
+        }), WeixinJSBridge.on("menu:general:share", function (s) {
+            var o = 0;
+            switch (s.shareTo) {
+                case "friend":
+                    o = 1;
+                    break;
+                case "timeline":
+                    o = 2;
+                    break;
+                case "weibo":
+                    o = 3;
+            }
+            s.generalShare({
+                appid: e,
+                img_url: t,
+                img_width: "640",
+                img_height: "640",
+                link: share_scene(n, o),
+                desc: i,
+                title: r
+            }, function (e) {
+                report(n, fakeid, o);
+            });
+        });
+        var o = {
+            "network_type:fail": "fail",
+            "network_type:edge": "2g",
+            "network_type:wwan": "3g",
+            "network_type:wifi": "wifi"
+        };
+        typeof WeixinJSBridge != "undefined" && WeixinJSBridge.invoke && WeixinJSBridge.invoke("getNetworkType", {}, function (e) {
+            networkType = o[e.err_msg], initpicReport();
+        });
+    }
+
+    typeof WeixinJSBridge == "undefined" ? document.addEventListener ? document.addEventListener("WeixinJSBridgeReady", e, !1) : document.attachEvent && (document.attachEvent("WeixinJSBridgeReady", e), document.attachEvent("onWeixinJSBridgeReady", e)) : e();
+}(), function () {
+    var e = null, t = 0, n = msg_link.split("?").pop(), r = hash(n);
+    window.addEventListener ? (window.addEventListener("load", function () {
+        t = cookie.get(r), window.scrollTo(0, t);
+    }, !1), window.addEventListener("unload", function () {
+        cookie.set(r, t), reportTimeOnPage();
+    }, !1), window.addEventListener("scroll", function () {
+        clearTimeout(e), e = setTimeout(function () {
+            t = window.pageYOffset;
+        }, 500);
+    }, !1), document.addEventListener("touchmove", function () {
+        clearTimeout(e), e = setTimeout(function () {
+            t = window.pageYOffset;
+        }, 500);
+    }, !1)) : window.attachEvent && (window.attachEvent("load", function () {
+        t = cookie.get(r), window.scrollTo(0, t);
+    }, !1), window.attachEvent("unload", function () {
+        cookie.set(r, t), reportTimeOnPage();
+    }, !1), window.attachEvent("scroll", function () {
+        clearTimeout(e), e = setTimeout(function () {
+            t = window.pageYOffset;
+        }, 500);
+    }, !1), document.attachEvent("touchmove", function () {
+        clearTimeout(e), e = setTimeout(function () {
+            t = window.pageYOffset;
+        }, 500);
+    }, !1));
+}(), function () {
+    function e(e) {
+        typeof window.WeixinJSBridge != "undefined" && WeixinJSBridge.invoke("imagePreview", {current: e, urls: n});
+    }
+
+    function t() {
+        var t = document.getElementById("img-content");
+        t = t ? t.getElementsByTagName("img") : [];
+        for (var r = 0, i = t.length; r < i; r++) {
+            var s = t.item(r), o = s.getAttribute("data-src") || s.getAttribute("src");
+            o && (n.push(o), function (t) {
+                s.addEventListener ? s.addEventListener("click", function () {
+                    e(t);
+                }) : s.attachEvent && s.attachEvent("click", function () {
+                    e(t);
+                });
+            }(o));
+        }
+    }
+
+    var n = [];
+    window.addEventListener ? window.addEventListener("load", t, !1) : window.attachEvent && (window.attachEvent("load", t), window.attachEvent("onload", t));
+}();
+var has_click = {};
+(function () {
+    function detect() {
+        var e = (window.pageYOffset || document.documentElement.scrollTop) - 20;
+        for (var t = 0, n = images.length; t < n; t++) {
+            var r = images[t], i = r.el.offsetTop;
+            !r.show && e < i + r.height && e + height > i && (r.el.setAttribute("src", r.src), r.show = !0), ISWP && r.el.width * 1 > sw && (r.el.width = sw);
+        }
+    }
+
+    function onScroll() {
+        clearTimeout(timer), timer = setTimeout(detect, 100);
+        var gdt_area = document.getElementById("gdt_area");
+        if (!!gdt_area && !ping_apurl) {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop, offsetTop = gdt_area.offsetTop;
+            if (scrollTop + innerHeight > offsetTop) {
+                var gdt_a = document.querySelectorAll("#gdt_area a");
+                if (gdt_a.length) {
+                    gdt_a = gdt_a[0];
+                    if (gdt_a.dataset && gdt_a.dataset.apurl) {
+                        ping_apurl = !0;
+                        var gid = gdt_a.dataset.gid, tid = gdt_a.dataset.tid;
+                        ajax({
+                            url: "/mp/advertisement_report?report_type=1&tid=" + tid + "&adver_group_id=" + gid + "&apurl=" + encodeURIComponent(gdt_a.dataset.apurl) + "&uin=" + uin + "&key=" + key + "&__biz=" + biz + "&r=" + Math.random(),
+                            success: function (res) {
+                                try {
+                                    res = eval("(" + res + ")");
+                                } catch (e) {
+                                    res = {};
+                                }
+                                res && res.ret != 0 && (ping_apurl = !1);
+                            },
+                            async: !0
+                        });
+                    }
+                }
+            }
+        }
+    }
+
+    function onLoad() {
+        var e = document.getElementsByTagName("img"), t = document.getElementById("page-content");
+        t.currentStyle ? sw = t.currentStyle.width : typeof getComputedStyle != "undefined" && (sw = getComputedStyle(t).width), sw = 1 * sw.replace("px", "");
+        for (var n = 0, r = e.length; n < r; n++) {
+            var i = e.item(n);
+            if (!i.getAttribute("data-src")) continue;
+            images.push({el: i, src: i.getAttribute("data-src"), height: i.offsetHeight, show: !1});
+        }
+        detect(), initpicReport();
+    }
+
+    var timer = null, innerHeight = window.innerHeight || document.documentElement.clientHeight, height = innerHeight + 40, images = [], ping_apurl = !1;
+    window.addEventListener ? (window.addEventListener("scroll", onScroll, !1), window.addEventListener("load", onLoad, !1), document.addEventListener("touchmove", onScroll, !1)) : (window.attachEvent("onscroll", onScroll), window.attachEvent("onload", onLoad));
+})(), function () {
+    function e() {
+        var e = document.getElementsByTagName("a"), t = !1;
+        if (!!e) {
+            var r = e.length;
+            for (var i = 0; i < r; ++i) {
+                var s = e[i], o = s.getAttribute("href"), u = /^(http|https):\/\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)(\/)?/g, a = u.exec(o);
+                a && a[2] && a[2] != "mp.weixin.qq.com" && (t = t || [], t.push(o), n.push(encodeURIComponent(o)));
+            }
+        }
+        return t;
+    }
+
+    function t() {
+        var e = document.getElementsByTagName("form");
+        if (e) for (var t = 0; t < e.length; ++t) {
+            var n = e[t];
+            if (n) {
+                var i = n.outerHTML || "";
+                r.push(encodeURIComponent(n.getAttribute("action") + i.substr(0, 400)));
+            }
+        }
+        return e ? e.length : 0;
+    }
+
+    var n = [], r = [], i = [];
+    e() && i.push(1), t() && i.push(2), i.length > 0 && (n = "&url=" + n.join("||"), r = "&furl=" + r.join("||"), ajax({
+        url: "/mp/hijack?type=" + i.join(",") + "&r=" + Math.random() + n + r,
+        type: "POST",
+        timeout: 2e3,
+        data: ""
+    }));
+}();</script>
+<script type="text/javascript">
+    if (Math.random() < 0.1) {
+        var page_endtime = (+new Date());
+        var page_time = page_endtime - _wxao.begin;
+        var is_link = "2" == "1";
+        var oss_key = is_link ? 13 : 14;
+        var report_time_url = 'https://mp.weixin.qq.com/misc/jsreport?type=avg&23521_' + oss_key + '=' + page_time + '&23521_15=1&23521_16=1&23521_17=3&23521_15|23521_16|23521_17=1&r=' + Math.random();
+        var _img = new Image(1, 1);
+        _img.src = report_time_url;
+    }
+</script>
+</body>
+<style type="text/css" id="__360se6_success_css"></style>
+</html>

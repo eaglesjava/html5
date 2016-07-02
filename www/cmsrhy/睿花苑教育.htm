@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://m.fanwei.com/index.php/site/show/17 -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>睿花苑教育</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no,maximum-scale=1,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+        body {
+            background-color: #1a801a;
+            max-width: 360px;
+            margin: 0 auto;
+            padding: 0;
+
+        }
+
+        .main {
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+        .news {
+            position: relative;
+            display: block;
+            width: 50%;
+            float: left;
+
+            background-color: #62c7f3;
+            font-size: 1.2em;
+            text-decoration: none;
+            /* line-height: 60px;*/
+            color: #333;
+        }
+
+        .news img {
+            display: block;
+        }
+
+        .news:nth-child(1) {
+            background-color: #1a801a;
+        }
+
+        .banner {
+            display: block;
+            width: 100%;
+        }
+
+        .title {
+            padding-left: 15px;
+            line-height: 100px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 320px) {
+            .title {
+                padding-left: 2px;
+            }
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        .tongji {
+            display: none;
+        }
+
+        #lm2, #lm4 {
+            margin-left: 10px;
+        }
+
+        #lm3, #lm4 {
+            margin-top: 10px;
+        }
+
+        #home_title2 {
+            left: 14px;
+            top: 11px;
+            position: absolute;
+            height: 16px;
+        }
+
+        #home_title3, #home_title5 {
+            left: 14px;
+            top: 12px;
+            position: absolute;
+            height: 16px;
+        }
+
+        #home_title4 {
+            left: 14px;
+            top: 19px;
+            position: absolute;
+            height: 16px;
+        }
+
+        @media screen and (max-width: 360px) {
+            #home_title2 {
+                left: 10px;
+                top: 4px;
+                position: absolute;
+                height: 16px;
+            }
+
+            #home_title3, #home_title5 {
+                left: 6px;
+                top: 6px;
+                position: absolute;
+                height: 16px;
+            }
+
+            #home_title4 {
+                left: 10px;
+                top: 10px;
+                position: absolute;
+                height: 16px;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            #home_title2 {
+                left: 10px;
+                top: 6px;
+                position: absolute;
+                height: 12px;
+            }
+
+            #home_title3, #home_title5 {
+                left: 14px;
+                top: 6px;
+                position: absolute;
+                height: 12px;
+            }
+
+            #home_title4 {
+                left: 14px;
+                top: 6px;
+                position: absolute;
+                height: 12px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+<!-- 通用 slides 组件 -->
+<meta charset="utf-8">
+
+<style>
+    /* 轮播css */
+    #mySwipe {
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    #mySwipe div b {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: block;
+        font-weight: bold;
+        color: #eeeeee;
+        font-size: 14px;
+        text-align: left;
+        /*margin-top: 200px;*/
+        padding: 5px 0;
+        /*padding-left: 10px;*/
+        /*box-shadow: 0 1px #EBEBEB;*/
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .swipe {
+        overflow: hidden;
+        visibility: hidden;
+        position: relative;
+    }
+
+    .swipe-wrap {
+        overflow: hidden;
+
+        position: relative;
+    }
+
+    .swipe-wrap > div {
+        float: left;
+        width: 100%;
+
+        position: relative;
+    }
+
+    #position {
+        position: absolute;
+        bottom: 4px;
+        right: 42%;
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #position li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        /* border-radius: 10px;*/
+        background: #ffffff;
+        /*box-shadow: inset 0 1px 3px black,0 0 1px 1px #0f6b00;*/
+        margin: 0 2px;
+        cursor: pointer;
+    }
+
+    #position li.on {
+        box-shadow: inset 0 1px 3px -1px #f2cd01, 0 1px 2px rgba(0, 0, 0, .5);
+        background-color: #f2cd01;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2cd01), color-stop(100%, #b0970c));
+        background-image: -webkit-linear-gradient(top, #f2cd01, #b0970c);
+        background-image: -moz-linear-gradient(top, #f2cd01, #b0970c);
+        background-image: -ms-linear-gradient(top, #f2cd01, #b0970c);
+        background-image: -o-linear-gradient(top, #f2cd01, #b0970c);
+        background-image: linear-gradient(top, #f2cd01, #b0970c);
+    }
+
+    .img img {
+        display: block;
+        /*height: 174px;*/
+    }
+
+    /* /轮播css */
+</style>
+<!-- 图片轮播 -->
+<div id="mySwipe" class="swipe" style="visibility: visible; ">
+    <div class="swipe-wrap" style="width: 1440px; ">
+        <div class="img"
+             style="width: 360px; left: 0px; -webkit-transition: 300ms; -webkit-transform: translate(0px, 0px) translateZ(0px); "
+             data-index="0">
+            <img src="./睿花苑教育_files/slide1.jpg" width="100%">
+
+            <b>&nbsp; </b></div>
+        <div class="img"
+             style="width: 360px; left: -360px; -webkit-transition: 0ms; -webkit-transform: translate(360px, 0px) translateZ(0px); "
+             data-index="1">
+            <img src="./睿花苑教育_files/slide2.jpg" width="100%">
+            <b>&nbsp; </b></div>
+        <div class="img"
+             style="width: 360px; left: -720px; -webkit-transition: 300ms; -webkit-transform: translate(-360px, 0px) translateZ(0px); "
+             data-index="2">
+            <img src="./睿花苑教育_files/slide3.jpg" width="100%">
+            <b>&nbsp; </b></div>
+        <div class="img"
+             style="width: 360px; left: -1080px; -webkit-transition: 300ms; -webkit-transform: translate(-360px, 0px) translateZ(0px); "
+             data-index="3">
+            <img src="./睿花苑教育_files/slide4.jpg" width="100%">
+            <b>&nbsp; </b></div>
+
+    </div>
+
+    <ul id="position">
+        <li class="on"></li>
+        <li class=" "></li>
+        <li class=" "></li>
+        <li class=" "></li>
+    </ul>
+</div>
+<!-- /图片轮播 -->
+
+<!-- 轮播相关js -->
+<script src="./睿花苑教育_files/swipe.js"></script>
+<script>
+    // pure JS
+    var elem = document.getElementById('mySwipe');
+    var bullets = document.getElementById('position').getElementsByTagName('li');
+    window.mySwipe = Swipe(elem, {
+        startSlide: 0,
+        auto: 3000,
+        continuous: true,
+        // disableScroll: true,
+        // stopPropagation: true,
+        callback: function (pos) {
+            var i = bullets.length;
+            while (i--) {
+                bullets[i].className = ' ';
+            }
+            bullets[pos].className = 'on';
+        }
+        // transitionEnd: function(index, element) {}
+    });
+
+</script>
+<!-- /轮播相关js -->
+<div class="main">
+
+    <a class="news" style="width: 100%;" href="公司简介.htm">
+        <img class="banner" src="./睿花苑教育_files/home1.jpg" width="100%">
+                <span class="title" style="display:block;line-height: 40px;height: 40px;"><img class="icon" style="position: absolute;
+right: 2px;" src="./睿花苑教育_files/home1_icon.png"><img style="padding-top: 6px;width: 76px;" src="./睿花苑教育_files/gsjj.png"></span>
+
+    </a>
+
+    <a id="lm1" class="news " href="教师列表.htm" style="width: 191.11111111111111px; ">
+        <img src="./睿花苑教育_files/home2.png" width="100%">
+        <span>师资力量</span>
+        <!-- <span class="title"><img class="icon" src=""></span>-->
+
+    </a>
+    <a id="lm2" class="news " href="教育产品.htm" style="width: 158.88888888888889px; ">
+        <img src="./睿花苑教育_files/home3.png" width="100%">
+        <span>教育产品</span>
+        <!-- <span class="title"><img class="icon" src=""></span>-->
+
+    </a>
+    <a id="lm3" class="news " href="课程分类.htm" style="width: 191.11111111111111px; ">
+        <img src="./睿花苑教育_files/home4.png" width="100%">
+        <span>课程分类</span>
+        <!-- <span class="title"><img class="icon" src=""></span>-->
+
+    </a>
+    <a id="lm4" class="news " href="联系我们.htm" style="width: 158.88888888888889px; ">
+        <img src="./睿花苑教育_files/home5.png" width="100%">
+        <span>联系我们</span>
+        <!-- <span class="title"><img class="icon" src=""></span>-->
+
+    </a>
+</div>
+<div class="tongji">
+
+</div>
+<script>
+    var llqWidth = document.documentElement.clientWidth - 10;
+    if (llqWidth > 350) {
+        llqWidth = 350;
+    }
+    var left = llqWidth * 344 / (344 + 286);
+    var right = llqWidth * 286 / (344 + 286);
+
+    var lm1 = document.getElementById('lm1');
+    var lm3 = document.getElementById('lm3');
+    lm1.style.width = left + 'px';
+    lm3.style.width = left + 'px';
+
+    var lm2 = document.getElementById('lm2');
+    var lm4 = document.getElementById('lm4');
+    lm2.style.width = right + 'px';
+    lm4.style.width = right + 'px';
+
+</script>
+
+
+</body>
+</html>
