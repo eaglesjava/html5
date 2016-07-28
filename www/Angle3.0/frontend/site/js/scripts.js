@@ -36,7 +36,7 @@
   // Global RTL Flag
   window.modeRTL = false;
   // get mode from local storage
-  modeRTL = $.localStorage.get('modeRTL');
+  var modeRTL = $.localStorage.get('modeRTL');
   console.log('Site is in '+(modeRTL?'RTL':'LTR')+' mode.');
 
 
