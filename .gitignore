@@ -4,7 +4,7 @@
 # IntelliJ project files
 .idea
 *.iml
-.setting
+.settings
 out
 gen
 # Created by .ignore support plugin (hsz.mobi)
